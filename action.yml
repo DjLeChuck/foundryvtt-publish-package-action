@@ -29,10 +29,6 @@ inputs:
     compatibility-maximum:
         description: 'The optional string for the Foundry version which this module has been verified to no longer function. We recommend not setting this value unless you have tested or received reports about your module no longer working in a recent version of Foundry, as it will prevent installation for any user at or after that version. As with minimum, this prevents installation for users on these incompatible versions.'
         required: false
-
-outputs:
-    response:
-        description: 'The response of the API.'
 runs:
     using: 'node20'
     main: 'index.js'

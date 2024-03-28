@@ -51,12 +51,6 @@ setting this value unless you have tested or received reports about your module 
 Foundry, as it will prevent installation for any user at or after that version. As with minimum, this prevents
 installation for users on these incompatible versions.
 
-## Outputs
-
-### `response`
-
-Response of the API call.
-
 ## Example usage
 
 ```yaml
@@ -68,6 +62,6 @@ with:
     release-version: '1.0.0'
     release-manifest: 'https://github.com/example/example-module/issues/releases/download/release-1.0.0/system.json'
     release-notes: 'https://github.com/example/example-module/releases/tag/release-1.0.0'
-    compatibility-minimum: '11.315'
-    compatibility-verified: '11'
+    compatibility-minimum: '11'
+    compatibility-verified: '11.315'
 ```

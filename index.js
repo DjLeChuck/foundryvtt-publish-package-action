@@ -36,7 +36,13 @@ async function process() {
       }),
     });
 
-    core.setOutput('response', await response.json());
+    const payload = await response.json();
+
+    if ('error' === payload.status) {
+      core.error(JSON.stringify(payload.errors));
+
+      core.setFailed('An error occured. Please see the API response to get more details.');
+    }
   } catch (error) {
     core.setFailed(error.message);
   }

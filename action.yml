@@ -1,0 +1,38 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+    token:
+        description: 'Package Release Token - Found accessing the edit page of your package on the FoundryVTT website.'
+        required: true
+    dry-run:
+        description: 'Do a dry-run. The API will validate and process your request, but not save any changes.'
+        required: false
+        default: 'true'
+    id:
+        description: 'The required ID of your package, as listed in your package manifest.'
+        required: true
+    release-version:
+        description: 'The required string representing the package version number. A semantic version number is preferred, such as "1.0.0".'
+        required: true
+    release-manifest:
+        description: 'The required string for the URL of your package manifest. Please Note: This is not the package manifest URL in your package manifest, which should be pointed to a latest branch. Instead, it should point to a specific release to allow users to download this specific version of your package.'
+        required: true
+    release-notes:
+        description: 'The optional string for the URL of your release notes for this version of your package. As with your manifest URL, we prefer this to be a discrete list of changes for this release for ease of accessing the most up-to-date, correct information.'
+        required: false
+    compatibility-minimum:
+        description: 'The required string for the Foundry version before which this module cannot function. This prevents installation for users on these incompatible versions.'
+        required: true
+    compatibility-verified:
+        description: 'The required string for the most recent Foundry version during which this module has been verified to work correctly. This is a suggestion to users to run either exactly or at most this version of Foundry when installing the module, but will not prevent installation.'
+        required: true
+    compatibility-maximum:
+        description: 'The optional string for the Foundry version which this module has been verified to no longer function. We recommend not setting this value unless you have tested or received reports about your module no longer working in a recent version of Foundry, as it will prevent installation for any user at or after that version. As with minimum, this prevents installation for users on these incompatible versions.'
+        required: false
+
+outputs:
+    response:
+        description: 'The response of the API.'
+runs:
+    using: 'node20'
+    main: 'index.js'

@@ -14,7 +14,7 @@ inputs:
     dry-run:
         description: 'Do a dry-run. The API will validate and process your request, but not save any changes.'
         required: false
-        default: 'true'
+        default: 'false'
     id:
         description: 'The required ID of your package, as listed in your package manifest.'
         required: false

@@ -1,5 +1,9 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'FoundryVTT publish package action'
+description: 'This action allow you to publish a package on the FoundryVTT website.'
+author: DjLeChuck
+branding:
+    icon: upload-cloud
+    color: orange
 inputs:
     token:
         description: 'Package Release Token - Found accessing the edit page of your package on the FoundryVTT website.'

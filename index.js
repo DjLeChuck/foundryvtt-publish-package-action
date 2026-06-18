@@ -1,6 +1,6 @@
 const core = require('@actions/core');
 
-const FOUNDRYVTT_API_URL = 'https://api.foundryvtt.com/_api/packages/release_version/';
+const FOUNDRYVTT_API_URL = 'https://foundryvtt.com/_api/packages/release_version/';
 let manifest = null;
 let manifestPayload = null;
 

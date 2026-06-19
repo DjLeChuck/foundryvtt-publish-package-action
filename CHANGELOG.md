@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-06-19
+
 ### Changed
 
 - Upgrade to Node 24
@@ -14,12 +16,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Change URL of Foundry's API
+- Change URL of Foundry's API (thank you @VincentVk9373)
 
 ## [1.0.1] - 2024-03-29
 
 Initial release! 🚀
 
-[Unreleased]: https://github.com/DjLeChuck/foundryvtt-publish-package-action/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/DjLeChuck/foundryvtt-publish-package-action/compare/v1.1.0...HEAD
+
+[1.1.0]: https://github.com/DjLeChuck/foundryvtt-publish-package-action/compare/v1.0.1...v1.1.0
 
 [1.0.1]: https://github.com/DjLeChuck/foundryvtt-publish-package-action/releases/tag/v1.0.1

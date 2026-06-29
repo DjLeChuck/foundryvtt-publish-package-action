@@ -1,4 +1,4 @@
-const core = require('@actions/core');
+import * as core from '@actions/core';
 
 const FOUNDRYVTT_API_URL = 'https://foundryvtt.com/_api/packages/release_version/';
 let manifest = null;

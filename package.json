@@ -1,6 +1,7 @@
 {
   "name": "foundryvtt-publish-package-action",
   "description": "Use a GitHub action to publish your package on FoundryVTT.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
